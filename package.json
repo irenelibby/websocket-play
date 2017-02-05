@@ -1,0 +1,19 @@
+{
+  "name": "websocket-play",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^14.0.0",
+    "hapi": "^16.1.0",
+    "inert": "^4.1.0",
+    "modelo": "^4.2.0",
+    "path": "^0.12.7",
+    "websocket": "^1.0.24"
+  }
+}
