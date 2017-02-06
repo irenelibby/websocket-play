@@ -1,7 +1,7 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 (function () {
     var W3CWebSocket = require('websocket').w3cwebsocket;
-    var ws = new W3CWebSocket('ws://localhost:8080/', 'echo-protocol');
+    var ws = new W3CWebSocket('ws://localhost:8181/', 'echo-protocol');
     
     var recognition = new (webkitSpeechRecognition || mozSpeechRecognition || msSpeechRecognition)();
     recognition.lang = 'en-US';
@@ -93,8 +93,99 @@ module.exports = require('../package.json').version;
 
 },{"../package.json":4}],4:[function(require,module,exports){
 module.exports={
-  "name": "websocket",
+  "_args": [
+    [
+      {
+        "raw": "websocket@^1.0.24",
+        "scope": null,
+        "escapedName": "websocket",
+        "name": "websocket",
+        "rawSpec": "^1.0.24",
+        "spec": ">=1.0.24 <2.0.0",
+        "type": "range"
+      },
+      "/home/ilibby/public_html/websocket-play"
+    ]
+  ],
+  "_from": "websocket@>=1.0.24 <2.0.0",
+  "_id": "websocket@1.0.24",
+  "_inCache": true,
+  "_location": "/websocket",
+  "_nodeVersion": "7.3.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/websocket-1.0.24.tgz_1482977757939_0.1858439394272864"
+  },
+  "_npmUser": {
+    "name": "theturtle32",
+    "email": "brian@worlize.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "websocket@^1.0.24",
+    "scope": null,
+    "escapedName": "websocket",
+    "name": "websocket",
+    "rawSpec": "^1.0.24",
+    "spec": ">=1.0.24 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/websocket/-/websocket-1.0.24.tgz",
+  "_shasum": "74903e75f2545b6b2e1de1425bc1c905917a1890",
+  "_shrinkwrap": null,
+  "_spec": "websocket@^1.0.24",
+  "_where": "/home/ilibby/public_html/websocket-play",
+  "author": {
+    "name": "Brian McKelvey",
+    "email": "brian@worlize.com",
+    "url": "https://www.worlize.com/"
+  },
+  "browser": "lib/browser.js",
+  "bugs": {
+    "url": "https://github.com/theturtle32/WebSocket-Node/issues"
+  },
+  "config": {
+    "verbose": false
+  },
+  "contributors": [
+    {
+      "name": "Iñaki Baz Castillo",
+      "email": "ibc@aliax.net",
+      "url": "http://dev.sipdoc.net"
+    }
+  ],
+  "dependencies": {
+    "debug": "^2.2.0",
+    "nan": "^2.3.3",
+    "typedarray-to-buffer": "^3.1.2",
+    "yaeti": "^0.0.6"
+  },
   "description": "Websocket Client & Server Library implementing the WebSocket protocol as specified in RFC 6455.",
+  "devDependencies": {
+    "buffer-equal": "^1.0.0",
+    "faucet": "^0.0.1",
+    "gulp": "git+https://github.com/gulpjs/gulp.git#4.0",
+    "gulp-jshint": "^2.0.4",
+    "jshint": "^2.0.0",
+    "jshint-stylish": "^2.2.1",
+    "tape": "^4.0.1"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "dist": {
+    "shasum": "74903e75f2545b6b2e1de1425bc1c905917a1890",
+    "tarball": "https://registry.npmjs.org/websocket/-/websocket-1.0.24.tgz"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "gitHead": "0e15f9445953927c39ce84a232cb7dd6e3adf12e",
+  "homepage": "https://github.com/theturtle32/WebSocket-Node",
   "keywords": [
     "websocket",
     "websockets",
@@ -107,84 +198,27 @@ module.exports={
     "server",
     "client"
   ],
-  "author": {
-    "name": "Brian McKelvey",
-    "email": "brian@worlize.com",
-    "url": "https://www.worlize.com/"
-  },
-  "contributors": [
-    {
-      "name": "Iñaki Baz Castillo",
-      "email": "ibc@aliax.net",
-      "url": "http://dev.sipdoc.net"
-    }
-  ],
-  "version": "1.0.24",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/theturtle32/WebSocket-Node.git"
-  },
-  "homepage": "https://github.com/theturtle32/WebSocket-Node",
-  "engines": {
-    "node": ">=0.8.0"
-  },
-  "dependencies": {
-    "debug": "^2.2.0",
-    "nan": "^2.3.3",
-    "typedarray-to-buffer": "^3.1.2",
-    "yaeti": "^0.0.6"
-  },
-  "devDependencies": {
-    "buffer-equal": "^1.0.0",
-    "faucet": "^0.0.1",
-    "gulp": "git+https://github.com/gulpjs/gulp.git#4.0",
-    "gulp-jshint": "^2.0.4",
-    "jshint-stylish": "^2.2.1",
-    "jshint": "^2.0.0",
-    "tape": "^4.0.1"
-  },
-  "config": {
-    "verbose": false
-  },
-  "scripts": {
-    "install": "(node-gyp rebuild 2> builderror.log) || (exit 0)",
-    "test": "faucet test/unit",
-    "gulp": "gulp"
-  },
-  "main": "index",
-  "directories": {
-    "lib": "./lib"
-  },
-  "browser": "lib/browser.js",
   "license": "Apache-2.0",
-  "gitHead": "0e15f9445953927c39ce84a232cb7dd6e3adf12e",
-  "bugs": {
-    "url": "https://github.com/theturtle32/WebSocket-Node/issues"
-  },
-  "_id": "websocket@1.0.24",
-  "_shasum": "74903e75f2545b6b2e1de1425bc1c905917a1890",
-  "_from": "websocket@latest",
-  "_npmVersion": "3.10.10",
-  "_nodeVersion": "7.3.0",
-  "_npmUser": {
-    "name": "theturtle32",
-    "email": "brian@worlize.com"
-  },
+  "main": "index",
   "maintainers": [
     {
       "name": "theturtle32",
       "email": "brian@worlize.com"
     }
   ],
-  "dist": {
-    "shasum": "74903e75f2545b6b2e1de1425bc1c905917a1890",
-    "tarball": "https://registry.npmjs.org/websocket/-/websocket-1.0.24.tgz"
+  "name": "websocket",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theturtle32/WebSocket-Node.git"
   },
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/websocket-1.0.24.tgz_1482977757939_0.1858439394272864"
+  "scripts": {
+    "gulp": "gulp",
+    "install": "(node-gyp rebuild 2> builderror.log) || (exit 0)",
+    "test": "faucet test/unit"
   },
-  "_resolved": "https://registry.npmjs.org/websocket/-/websocket-1.0.24.tgz"
+  "version": "1.0.24"
 }
 
 },{}]},{},[1]);
