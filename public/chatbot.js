@@ -9,7 +9,7 @@
     recognition.maxAlternatives = 5;
 
     var showTextBubble = function(text, position) {
-        $(".bubble-screen").append('<div class="speech-'+position+'">'+text+'</div>');
+        $(".bubble-screen").append('<div class="speech-bubble speech-'+position+'">'+text+'</div>');
     }
 
     ws.onerror = function() {
@@ -96,18 +96,18 @@ module.exports={
   "_args": [
     [
       {
-        "raw": "websocket@^1.0.24",
+        "raw": "websocket",
         "scope": null,
         "escapedName": "websocket",
         "name": "websocket",
-        "rawSpec": "^1.0.24",
-        "spec": ">=1.0.24 <2.0.0",
-        "type": "range"
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
       },
       "/home/ilibby/public_html/websocket-play"
     ]
   ],
-  "_from": "websocket@>=1.0.24 <2.0.0",
+  "_from": "websocket@latest",
   "_id": "websocket@1.0.24",
   "_inCache": true,
   "_location": "/websocket",
@@ -123,21 +123,22 @@ module.exports={
   "_npmVersion": "3.10.10",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "websocket@^1.0.24",
+    "raw": "websocket",
     "scope": null,
     "escapedName": "websocket",
     "name": "websocket",
-    "rawSpec": "^1.0.24",
-    "spec": ">=1.0.24 <2.0.0",
-    "type": "range"
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
   },
   "_requiredBy": [
+    "#USER",
     "/"
   ],
   "_resolved": "https://registry.npmjs.org/websocket/-/websocket-1.0.24.tgz",
   "_shasum": "74903e75f2545b6b2e1de1425bc1c905917a1890",
   "_shrinkwrap": null,
-  "_spec": "websocket@^1.0.24",
+  "_spec": "websocket",
   "_where": "/home/ilibby/public_html/websocket-play",
   "author": {
     "name": "Brian McKelvey",

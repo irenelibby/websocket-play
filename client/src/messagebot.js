@@ -3,7 +3,7 @@
     var ws = new W3CWebSocket('ws://localhost:8181/', 'echo-protocol');
     
     var showTextBubble = function(text, position) {
-        $(".bubble-screen").append('<div class="speech-'+position+'">'+text+'</div>');
+        $(".bubble-screen").append('<div class="speech-bubble speech-'+position+'">'+text+'</div>');
     }
 
     ws.onerror = function() {
